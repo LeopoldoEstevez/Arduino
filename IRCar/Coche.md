@@ -68,6 +68,7 @@ void loop() {
                                    //delay(500);
                          break;       
         case 0x132C6FDF7:  //Serial.println("Left"); // Button 7
+		speed = 255;
                          digitalWrite(pinIN3, HIGH);
                            digitalWrite(pinIN4, LOW);
                            analogWrite(pinENB, speed);
@@ -84,6 +85,7 @@ void loop() {
                                    //delay(500);
                          break; 
         case 0x13EC3FC1B:  //Serial.println("r"); // Button 9
+		speed = 255;
                          digitalWrite(pinIN1, HIGH);
                              digitalWrite(pinIN2, LOW);
                                 analogWrite(pinENA, speed);
